@@ -44,7 +44,7 @@ echo $head;
               <a href="<?=$url?><?php if(isset($_SESSION['url'])){ echo $_SESSION['url']; }else{ echo'patient-login'; } ?>" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 ">Patients</a>
             </li>
             <li>
-              <a href="<?=$url?><?php if(isset($_SESSION['url'])){ echo $_SESSION['url']; }else{ echo'recetionist-login'; } ?>" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 ">Recetionist</a>
+              <a href="<?=$url?><?php if(isset($_SESSION['url'])){ echo $_SESSION['url']; }else{ echo'recetionist-login'; } ?>" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 ">Receptionist</a>
             </li>
           </ul>
         </div>
