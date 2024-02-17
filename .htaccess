@@ -1,0 +1,30 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/php/
+
+RewriteRule ^patient$ patient/index.php [L]
+RewriteRule ^patient/(.*)$ patient/index.php [L]
+
+RewriteRule ^receptionist$ receptionist/index.php [L]
+RewriteRule ^receptionist/(.*)$ receptionist/index.php [L]
+
+RewriteRule ^access-control$ access-control/index.php [L]
+RewriteRule ^access-control/(.*)$ access-control/index.php [L]
+
+RewriteRule ^doctor$ doctor/index.php [L]
+RewriteRule ^doctor/(.*)$ doctor/index.php [L]
+
+RewriteRule ^hospital-staff$ hospital-staff/index.php [L]
+RewriteRule ^hospital-staff/(.*)$ hospital-staff/index.php [L]
+
+RewriteRule ^nurse$ nurse/index.php [L]
+RewriteRule ^nurse/(.*)$ nurse/index.php [L]
+
+RewriteRule ^admin$ admin/index.php [L]
+RewriteRule ^admin/(.*)$ admin/index.php [L]
+
+# If the requested file or directory does not exist:
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Then rewrite the request to index.php:
+RewriteRule ^ index.php [QSA,L]
