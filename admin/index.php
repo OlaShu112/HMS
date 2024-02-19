@@ -147,6 +147,9 @@ switch ($request) {
         elseif(basename($request) === 'hospital-staff-edit'){
             $head = "<title>Edit Hospital Staff</title>";
         }
+        elseif(basename($request) === 'system-status'){
+            $head = "<title>System Status</title>";
+        }
         $mainContent = __DIR__ . '/' . basename($request) . '.php';
         if (!file_exists($mainContent)) {
             $head = "<title>Dashboard | Admin</title>";

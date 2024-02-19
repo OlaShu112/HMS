@@ -35,7 +35,7 @@ echo $head;
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-8  md:flex-row md:mt-0 md:border-0 ">
             <li>
-            <a href="<?=$url?>" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0" aria-current="page">Home</a>
+              <a href="<?=$url?>" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0" aria-current="page">Home</a>
             </li>
             <li>
               <a href="<?=$url?><?php if(isset($_SESSION['url'])){ echo $_SESSION['url']; }else{ echo'staff-login'; } ?>" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 ">Staff</a>
@@ -44,7 +44,7 @@ echo $head;
               <a href="<?=$url?><?php if(isset($_SESSION['url'])){ echo $_SESSION['url']; }else{ echo'patient-login'; } ?>" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 ">Patients</a>
             </li>
             <li>
-              <a href="<?=$url?><?php if(isset($_SESSION['url'])){ echo $_SESSION['url']; }else{ echo'recetionist-login'; } ?>" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 ">Receptionist</a>
+              <a href="<?=$url?><?php if(isset($_SESSION['url'])){ echo $_SESSION['url']; }else{ echo'recetionist-login'; } ?>" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 ">Recetionist</a>
             </li>
           </ul>
         </div>
