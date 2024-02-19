@@ -35,7 +35,7 @@
 
             <div id="other-appointments" class="appointment-info mt-8" >
                 <h3 class="text-2xl font-semibold text-gray-800">Contact Other HMS Services Directly</h3>
-                <p class="text-gray-600 mt-4">You can find contact details for other NHS services near you such as dentists, pharmacists, and HMS sight tests.</p>
+                <p class="text-gray-600 mt-4">You can find contact details for other HMS services near you such as dentists, pharmacists, and HMS sight tests.</p>
                 <!-- <a href="#find-hms-services" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Find other HMS services near you</a> -->
             </div>
         </section>

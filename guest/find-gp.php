@@ -5,13 +5,13 @@
         <p class="text-gray-700 text-base mb-4">Strikes are planned to take place in some parts of the NHS during the
             winter.</p>
 
-        <p class="text-gray-700 text-base mb-4">On strike days, A&E departments and NHS 111 are likely to be extremely
+        <p class="text-gray-700 text-base mb-4">On strike days, A&E departments and HMS 222 are likely to be extremely
             busy, with longer waiting times than normal. But it's important to get medical help if you need it.</p>
 
-        <p class="text-gray-700 text-base mb-4">For urgent help for people aged 5 or over use 111 online. Call 111 for
+        <p class="text-gray-700 text-base mb-4">For urgent help for people aged 5 or over use 222 online. Call 222 for
             children under 5. Call 999 if it's a life-threatening emergency.</p>
 
-        <p class="text-gray-700 text-base mb-4">The NHS will contact you if you have an appointment that needs to be
+        <p class="text-gray-700 text-base mb-4">The HMS will contact you if you have an appointment that needs to be
             changed. If you have not been contacted, attend your appointment as planned.</p>
         <p class="text-gray-700 text-base mb-4">GP appointments and services are not affected.</p>
         <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">How We Work</h3>
@@ -22,7 +22,7 @@
 
         <p class="text-gray-700 text-base mb-4"><strong>Content Accuracy:</strong> To ensure the safety, accuracy, and
             currency of our content, we source information from peer-reviewed scientific research by the National
-            Institute for Health and Care Excellence (NICE). Clinical content is signed off by our NHS England clinical
+            Institute for Health and Care Excellence (NICE). Clinical content is signed off by our HMS England clinical
             assurance team.</p>
 
         <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">How We're Improving</h3>
