@@ -1,24 +1,16 @@
-# OLADOTUN OGUNDARI
 
 # HMS
 
-An HMS (Hospital Management System) project built with PHP and AJAX is a web-based application designed to manage various aspects of hospital operations. This system aims to optimize the hospital's processes, including patient registration, appointment scheduling, and more.
-
-$servername = "localhost:3307"; //servername
-$username = "root"; // DB username
-$password = ""; // DB password
-$dbname = "hms"; // database name
-
-localhost can be changed in db.php
+An HMS (Hospital Management System) project built with PHP and AJAX is a web-based application designed to manage various aspects of hospital operations. This system aims to streamline the hospital's processes, including patient registration, appointment scheduling, etc.
 
 
-## Installation if needed
+## Installation
 
 ### Step 1
 Install Xammp
 
 ### Step 2
-Run Apache and Mysql server -- From Xampp Control
+Run Apache and Mysql server -- From Xammp Control
 
 ![App Screenshot](https://i.postimg.cc/wvpcSvTw/image.png)
 
@@ -44,5 +36,4 @@ Update the base url
 - Nurse
 - Receiptionist
 - Patient
-
 

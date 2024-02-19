@@ -65,13 +65,25 @@ switch ($request) {
             $head = "<title>Patient Edit</title>";
         } elseif (basename($request) === 'profile') {
             $head = "<title>Profile</title>";
-        }
-        $mainContent = __DIR__ . '/' . basename($request) . '.php';
-        if (!file_exists($mainContent)) {
-            $head = "<title>Dashboard | Hospital Staff</title>";
-            $request = 'home';
-            $mainContent = __DIR__ . '/' . basename($request) . '.php';
-        }
-        break;
-}
-include __DIR__ . '/../layouts/hospital-staff/app.php';
+
+}else {
+    $head = "<title>Dashboard | Hospital Staff</title>";
+     $request = 'home';
+     $mainContent = __DIR__ . '/' . basename($request) . '.php';
+ }
+ 
+ $cleanedUrl = str_replace('/hms/', '/', $requestUri);
+ $cleanedUrl = str_replace('/hospital-staff/', '/', $cleanedUrl);
+ 
+ 
+ $filePath = __DIR__ . $cleanedUrl.'.php';
+ if (file_exists($filePath)) {
+ $mainContent = __DIR__ . '/' . basename($request) . '.php';
+ } else {
+ http_response_code(404);
+ }
+ 
+ break;
+ }
+ include __DIR__ . '/../layouts/hospital-staff/app.php';
+ 

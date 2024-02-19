@@ -149,13 +149,23 @@ switch ($request) {
         }
         elseif(basename($request) === 'system-status'){
             $head = "<title>System Status</title>";
-        }
-        $mainContent = __DIR__ . '/' . basename($request) . '.php';
-        if (!file_exists($mainContent)) {
+        }else {
             $head = "<title>Dashboard | Admin</title>";
             $request = 'home';
             $mainContent = __DIR__ . '/' . basename($request) . '.php';
         }
+
+        $cleanedUrl = str_replace('/hms/', '/', $requestUri);
+$cleanedUrl = str_replace('/admin/', '/', $cleanedUrl);
+
+
+$filePath = __DIR__ . $cleanedUrl.'.php';
+if (file_exists($filePath)) {
+    $mainContent = __DIR__ . '/' . basename($request) . '.php';
+} else {
+    http_response_code(404);
+}
+
         break;
 }
 include __DIR__ . '/../layouts/admin/app.php';

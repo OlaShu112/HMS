@@ -28,12 +28,7 @@
     <div class="lg:w-1/2 flex flex-col justify-between">
         <p class=" text-lg leading-8 text-gray-800">Find out how your medicine works, how and when
             to take it, possible side effects and answers to
-            your common questions <br>
-            Receive guidance on potential interactions 
-            with other medications or dietary considerations. <br>
-            Learn about alternative treatment options and 
-            lifestyle adjustments to complement medication effectiveness. <br>
-        </p>
+            your common questions</p>
           <div class="">
             <p class="mt-6 text-lg leading-8 text-black font-bold">HMS services</p>
             <p class="mt-0 text-lg leading-8 text-gray-800">Find the service you need and book appointments online.

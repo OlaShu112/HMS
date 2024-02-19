@@ -8,6 +8,10 @@ RewriteRule ^patient/(.*)$ patient/index.php [L]
 RewriteRule ^receptionist$ receptionist/index.php [L]
 RewriteRule ^receptionist/(.*)$ receptionist/index.php [L]
 
+RewriteRule ^php$ php/index.php [L]
+RewriteRule ^php/(.*)$ php/index.php [L]
+
+
 RewriteRule ^access-control$ access-control/index.php [L]
 RewriteRule ^access-control/(.*)$ access-control/index.php [L]
 

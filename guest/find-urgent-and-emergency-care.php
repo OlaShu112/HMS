@@ -5,13 +5,13 @@
 
             <div class="mt-8">
                 <h3 class="text-2xl font-semibold text-gray-800">Urgent advice: If you're not sure what to do</h3>
-                <p class="mt-4 text-gray-600">You can call 222 or get help from 222 online.</p>
+                <p class="mt-4 text-gray-600">You can call 111 or get help from 111 online.</p>
             </div>
 
             <div class="mt-8">
                 <h3 class="text-2xl font-semibold text-gray-800">For non life-threatening emergencies</h3>
-                <p class="mt-4 text-gray-600">If you need medical attention but it's not a life-threatening situation, call 222 or get help from 222 online.</p>
-                <p class="mt-4 text-gray-600">HMS 222 can tell you what to do next.</p>
+                <p class="mt-4 text-gray-600">If you need medical attention but it's not a life-threatening situation, call 111 or get help from 111 online.</p>
+                <p class="mt-4 text-gray-600">NHS 111 can tell you what to do next.</p>
             </div>
 
             <div class="mt-8">
@@ -24,7 +24,7 @@
             <div class="mt-8">
                 <h3 class="text-2xl font-semibold text-gray-800">More in Urgent and Emergency Care Services</h3>
                 <ul class="list-disc list-inside mt-4 space-y-2 text-gray-600">
-                    <li><a href="#hhs-222-online" class="text-blue-500 hover:text-blue-600">When to use HMS 222 online or call 222</a></li>
+                    <li><a href="#nhs-111-online" class="text-blue-500 hover:text-blue-600">When to use NHS 111 online or call 111</a></li>
                     <li><a href="#call-999" class="text-blue-500 hover:text-blue-600">When to call 999</a></li>
                     <li><a href="#go-to-AE" class="text-blue-500 hover:text-blue-600">When to go to A&E</a></li>
                     <li><a href="#urgent-treatment-centres" class="text-blue-500 hover:text-blue-600">When to visit urgent treatment centres or other urgent care services</a></li>

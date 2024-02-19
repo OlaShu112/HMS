@@ -12,7 +12,7 @@
 
             <div id="gp-appointments" class="appointment-info mt-8">
                 <h3 class="text-2xl font-semibold text-gray-800">Manage GP Appointments Online</h3>
-                <p class="text-gray-600 mt-4">You may be able to book, cancel, or change a GP appointment by logging into your HMS account on the HMS website or HMS App.</p>
+                <p class="text-gray-600 mt-4">You may be able to book, cancel, or change a GP appointment by logging into your HMS account on the NHS website or HMS App.</p>
                 <ul class="list-disc list-inside mt-4 space-y-2 text-gray-600">
                     <li>Registered with a GP surgery</li>
                     <li>Aged 13 or over</li>

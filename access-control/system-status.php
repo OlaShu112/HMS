@@ -54,7 +54,7 @@ function getApiDetails($url,$path) {
     if($status_code===200){
         $status_code='<span class="status_working">Working</span>';
     }else{
-      $status_code='<span class="status_failed">Problem</span>';
+      $status_code='<span class="status_failed">Not Found</span>';
     }
     return [
         'status' => $status_code,
@@ -67,6 +67,46 @@ function getApiDetails($url,$path) {
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-start lg:py-16 lg:px-12">
         
                 <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl ">System Status</h1>
+                <div class="flex flex-col mt-5">
+<div class="flex">
+  
+<form id="dataForm" class=" mx-auto flex">
+<div class="" style="width: 210px;">
+    <label for="url" class="block mb-2 text-sm font-medium text-gray-900">URL</label>
+    <input type="text" id="url" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value="<?=$url?>" readonly required />
+  </div>
+  <div class="" style="width: 180px;">
+<label for="base" class="block mb-2 text-sm font-medium text-gray-900">Base</label>
+  <select id="base" name="base" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+
+    <option value="php">php</option>
+    <option value="access-control">access-control</option>
+    <option value="admin">admin</option>
+    <option value="doctor">doctor</option>
+    <option value="patient">patient</option>
+    <option value="nurse">nurse</option>
+    <option value="receptionist">receptionist</option>
+    <option value="hospital-staff">hospital-staff</option>
+  </select>
+</div>
+<div class="" style="width: 260px;">
+    <label for="path" class="block mb-2 text-sm font-medium text-gray-900">Path</label>
+    <input type="text" name="path" id="path" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="path..." />
+  </div>
+  <div>
+  <label for="email" class="block mb-2 text-sm font-medium text-gray-900" style="visibility: hidden;">button</label>
+  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 font-medium text-sm px-5 py-2.5 p-2.5 action_btn">Get Data</button>
+  </div>
+</form>
+
+</div>
+
+<div id="output" class="flex">
+  
+
+
+</div>
+                </div>
                 <div class="flex flex-col mt-5">
                     <div class="-m-1.5 overflow-x-auto">
                       <div class="p-1.5 min-w-full inline-block align-middle">
@@ -299,3 +339,34 @@ function getApiDetails($url,$path) {
             });
     });
     </script>
+        <script>
+  $(document).on('submit', '#dataForm', function (e) {
+    e.preventDefault();
+    var formData = new FormData($("#dataForm")[0]);
+    $(".action_btn").attr('disabled', true);
+    $(".action_btn").text('Loading...');
+    $(".action_btn").addClass('cursor-not-allowed bg-blue-400');
+    $.ajax({
+      method: "POST",
+      url: "<?= $url ?>php/get_data.php",
+      data: formData,
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function (res) {
+        $(".action_btn").attr('disabled', false);
+        $(".action_btn").removeClass('cursor-not-allowed bg-blue-400');
+        $(".action_btn").text('Get Data');
+        var data = JSON.parse(res);
+        if (data.status === 'success') {
+          $("#output").removeClass('hidden').addClass('flex');
+         $("#output").html(data.html);
+        } else {
+          $("#output").removeClass('flex').addClass('hidden');
+          alert(data.msg);
+        }
+
+      }
+    });
+  });
+</script>

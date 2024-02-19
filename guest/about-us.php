@@ -4,7 +4,7 @@
 
         <p class="text-gray-700 text-base mb-4">Welcome to the HMS Website – the UK's largest health platform, with over 50 million monthly visits. Our commitment is to provide reliable and up-to-date health information to empower individuals in managing their well-being.</p>
 
-        <p class="text-gray-700 text-base mb-4"><strong>Our Reach:</strong> While the primary source of information is the HMS website for England (www.hms.uk), it's important to note that HMS services and information may vary across the UK. For specific information in Scotland, Wales, and Northern Ireland, please visit your local HMS websites.</p>
+        <p class="text-gray-700 text-base mb-4"><strong>Our Reach:</strong> While the primary source of information is the NHS website for England (www.hms.uk), it's important to note that HMS services and information may vary across the UK. For specific information in Scotland, Wales, and Northern Ireland, please visit your local HMS websites.</p>
 
         <p class="text-gray-700 text-base mb-4"><strong>Beyond the Website:</strong> We extend our services beyond the website, reaching millions through partner websites, apps, and various internet-connected devices. Over 2,000 organizations, including other HMS websites, local authorities, charities, and technology leaders, share our content.</p>
 
@@ -16,7 +16,7 @@
 
         <p class="text-gray-700 text-base mb-4"><strong>User-Centric Approach:</strong> Users are at the heart of our content creation and transformation. We adopt an agile, iterative approach, beginning with identifying user needs and continuously testing and improving based on user feedback.</p>
 
-        <p class="text-gray-700 text-base mb-4"><strong>Content Accuracy:</strong> To ensure the safety, accuracy, and currency of our content, we source information from peer-reviewed scientific research by the National Institute for Health and Care Excellence (NICE). Clinical content is signed off by our HMS England clinical assurance team.</p>
+        <p class="text-gray-700 text-base mb-4"><strong>Content Accuracy:</strong> To ensure the safety, accuracy, and currency of our content, we source information from peer-reviewed scientific research by the National Institute for Health and Care Excellence (NICE). Clinical content is signed off by our NHS England clinical assurance team.</p>
 
         <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">How We're Improving</h3>
 

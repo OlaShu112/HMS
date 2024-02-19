@@ -53,13 +53,23 @@ elseif (basename($request)==='profile') {
 }
 elseif (basename($request)==='prescription-details') {
     $head = "<title>Prescription Details</title>";
+}else {
+   $head = "<title>Dashboard | Patient</title>";
+    $request = 'home';
+    $mainContent = __DIR__ . '/' . basename($request) . '.php';
 }
-        $mainContent = __DIR__ . '/' . basename($request) . '.php';
-        if(!file_exists($mainContent)){
-            $head = "<title>Dashboard | Patient</title>";
-            $request='home';
-            $mainContent = __DIR__ . '/' . basename($request) . '.php';
-        }
-        break;
+
+$cleanedUrl = str_replace('/hms/', '/', $requestUri);
+$cleanedUrl = str_replace('/patient/', '/', $cleanedUrl);
+
+
+$filePath = __DIR__ . $cleanedUrl.'.php';
+if (file_exists($filePath)) {
+$mainContent = __DIR__ . '/' . basename($request) . '.php';
+} else {
+http_response_code(404);
 }
-include __DIR__ . '/../layouts/patient/app.php'; // Use filesystem path
+
+break;
+}
+include __DIR__ . '/../layouts/patient/app.php';

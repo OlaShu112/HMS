@@ -21,7 +21,7 @@ elseif ($request==='/staff-login') {
 }
 elseif ($request==='/register') {
     $mainContent = __DIR__ . '/guest/register.php';
-}else{
+}
     // Head data
     if (basename($request)==='/') {
         $head = "<title>Home</title>";
@@ -54,5 +54,5 @@ elseif (basename($request)==='register') {
             $request='home';
             $mainContent = __DIR__ . '/guest/' . basename($request) . '.php';
         }
-}
+
 include __DIR__ . '/layouts/guest/app.php'; // Use filesystem path
