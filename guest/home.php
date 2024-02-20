@@ -1,7 +1,7 @@
 <section class=" h-[70vh] relative bg-black text-white top-[68px]">
         <img src="<?=$url?>assets/images/hospitalImage.jpg" class="absolute inset-0 w-full h-full object-cover opacity-40" alt="Background">
         <div class="relative z-10 p-4 w-full flex justify-center items-center h-full flex-col text-center">
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider">Hospital <mark class="px-2 text-white bg-blue-600 rounded ">Management</mark> System</h1>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider">Hospital Management System</h1>
             <p class="mt-4 text-xl font-semibold">Empowering healthcare through efficient management and patient care</p>
         </div>
       </section>
@@ -28,7 +28,10 @@
     <div class="lg:w-1/2 flex flex-col justify-between">
         <p class=" text-lg leading-8 text-gray-800">Find out how your medicine works, how and when
             to take it, possible side effects and answers to
-            your common questions</p>
+            your common questions. </p>
+            <p class=" text-lg leading-8 text-gray-800">Learn about the importance of medication adherence and how it impacts your overall health outcomes.<br>
+            Explore practical tips and strategies to help you stay on track with your medication regimen, 
+            such as establishing a routine, setting reminders, and seeking support from healthcare professionals. </p>
           <div class="">
             <p class="mt-6 text-lg leading-8 text-black font-bold">HMS services</p>
             <p class="mt-0 text-lg leading-8 text-gray-800">Find the service you need and book appointments online.
