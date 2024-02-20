@@ -3,7 +3,7 @@
                 <div class="py-8 px-4 mx-auto max-w-screen-xl text-start  lg:px-12">
 
                     <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl ">
-                        Add Patient</h1>
+                        Add Doctor</h1>
                         <div class="mt-10 grid grid-cols-1">
       <form class="space-y-6" id="dataForm" enctype="multipart/form-data">
       <div class="col-span-full p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50  hidden error_alert alert_boxes" role="alert">

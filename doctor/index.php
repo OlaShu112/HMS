@@ -86,7 +86,9 @@ switch ($request) {
  $cleanedUrl = str_replace('/doctor/', '/', $cleanedUrl);
  
  
- $filePath = __DIR__ . $cleanedUrl.'.php';
+ $segments = explode('/', $path);
+ $lastSegment = end($segments);
+ $filePath = __DIR__ .'/'. $lastSegment.'.php';
  if (file_exists($filePath)) {
  $mainContent = __DIR__ . '/' . basename($request) . '.php';
  } else {
