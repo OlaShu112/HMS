@@ -76,7 +76,18 @@ switch ($request) {
             $head = "<title>Prescription Edit</title>";
         } elseif (basename($request)==='add-prescription') {
             $head = "<title>Add Prescription</title>";
-}else {
+        } elseif (basename($request) === 'medical-record') {
+            $head = "<title>Medical Records</title>";
+        }
+        elseif (basename($request)==='medical-record-details') {
+            $head = "<title>Medical Record Details</title>";
+        }
+        elseif (basename($request)==='medical-record-edit') {
+            $head = "<title>Medical Record Edit</title>";
+        } elseif (basename($request)==='add-medical-record') {
+            $head = "<title>Add Medical Record</title>";
+        }
+else {
     $head = "<title>Dashboard | Doctor</title>";
      $request = 'home';
      $mainContent = __DIR__ . '/' . basename($request) . '.php';

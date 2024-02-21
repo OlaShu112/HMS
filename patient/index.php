@@ -53,7 +53,13 @@ elseif (basename($request)==='profile') {
 }
 elseif (basename($request)==='prescription-details') {
     $head = "<title>Prescription Details</title>";
-}else {
+} elseif (basename($request) === 'medical-record') {
+    $head = "<title>Medical Records</title>";
+}
+elseif (basename($request)==='medical-record-details') {
+    $head = "<title>Medical Record Details</title>";
+}
+else {
    $head = "<title>Dashboard | Patient</title>";
     $request = 'home';
     $mainContent = __DIR__ . '/' . basename($request) . '.php';

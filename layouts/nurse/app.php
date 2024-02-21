@@ -250,6 +250,15 @@ echo $head;
             </ul>
           </li>
 
+          <li>
+                <a href="<?=$url?>nurse/medical-record" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+  <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v15c0 .6.4 1 1 1h15M8 16l2.5-5.5 3 3L17.3 7 20 9.7"/>
+  </svg>
+                   <span class="flex-1 ml-3 whitespace-nowrap">Medical Records</span>
+                </a>
+             </li>
+
 
               <li>
                 <a href="<?=$url?>nurse/profile" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">

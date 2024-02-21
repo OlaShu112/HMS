@@ -66,7 +66,13 @@ switch ($request) {
         } elseif (basename($request) === 'profile') {
             $head = "<title>Profile</title>";
 
-}else {
+        } elseif (basename($request) === 'medical-record') {
+            $head = "<title>Medical Records</title>";
+        }
+        elseif (basename($request)==='medical-record-details') {
+            $head = "<title>Medical Record Details</title>";
+        }
+else {
     $head = "<title>Dashboard | Receptionist</title>";
     $request = 'home';
     $mainContent = __DIR__ . '/' . basename($request) . '.php';
