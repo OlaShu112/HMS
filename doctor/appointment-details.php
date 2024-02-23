@@ -49,7 +49,7 @@ $doctor_id = $doctor_data['id'];
                             <div class="col-span-full mb-4">
                                 <label for="txtDate" class="block text-sm font-medium leading-6 text-gray-900">Status</label>
                                 <div class="mt-2">
-                                  <input type="text" name="date" id="txtDate" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="<?php if(intval($data['status'])===1){ echo 'Upcoming'; }elseif(intval($row['status'])===2){ echo 'Active'; }else{ echo 'Past'; } ?>" readonly disabled>
+                                <input type="text" name="date" id="txtDate" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="<?php if(isset($data['status']) && intval($data['status']) === 1){ echo 'Upcoming'; } elseif(isset($row['status']) && intval($row['status']) === 2){ echo 'Active'; } else{ echo 'Past'; } ?>" readonly disabled>
                                 </div>
                                      </div>
                             <div class="col-span-full mb-4">
