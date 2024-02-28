@@ -1,6 +1,6 @@
 # OLADOTUN A OGUNDARI
 
-# HMS (hOSPITAL MANAGEMENT SYSTEM)
+# HMS (HOSPITAL MANAGEMENT SYSTEM)
 
 An HMS (Hospital Management System) project built with PHP and AJAX is a web-based application designed to manage various aspects of hospital operations. This system aims to streamline the hospital's processes, including patient registration, appointment scheduling, etc.
 
