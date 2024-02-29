@@ -119,7 +119,7 @@ CREATE TABLE `messages` (
 INSERT INTO `messages` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) VALUES
 (1, 5, 3, 'hi'),
 (2, 5, 4, 'hi'),
-(3, 4, 5, 'Hi - I\'m patient'),
+(3, 4, 5, 'Hi - I'm patient'),
 (4, 5, 4, 'Hello'),
 (5, 4, 5, 'yes doctor'),
 (6, 4, 5, 'testing'),
@@ -131,7 +131,7 @@ INSERT INTO `messages` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) V
 (12, 5, 4, 'r'),
 (13, 5, 4, 'trtrt'),
 (14, 4, 5, 'hi'),
-(15, 5, 4, 'dcotor here'),
+(15, 5, 4, 'doctor here'),
 (16, 4, 5, 'here is patient'),
 (17, 4, 5, 'dgrg'),
 (18, 4, 5, 'rg'),
